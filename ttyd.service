@@ -1,0 +1,10 @@
+[Unit]
+Description=ttyd service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/ttyd -p 7681 --writable bash -l
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
