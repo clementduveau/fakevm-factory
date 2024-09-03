@@ -1,4 +1,4 @@
 #!/bin/bash
 
 apt-get install -y podman python3-pip
-pip3 install podman-compose
+pip3 install podman-compose --break-system-packages # YOLO

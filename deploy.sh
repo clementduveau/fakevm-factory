@@ -6,5 +6,5 @@
 ./generate-compose.sh $1
 
 # Build and deploy
-podman-compose build
+podman build
 podman-compose up -d
